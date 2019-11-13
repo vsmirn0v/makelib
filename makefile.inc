@@ -147,5 +147,6 @@ docker-push:
 	docker push $(DOCKER_TARGET_IMAGE)
 
 
+.PHONY: makefile-inc-update
 makefile-inc-update:
-	curl http
+	curl https://raw.githubusercontent.com/vsmirn0v/makelib/master/makefile.inc -OL
